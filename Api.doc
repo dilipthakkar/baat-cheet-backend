@@ -1,0 +1,65 @@
+Authentication-
+
+1. /api/signup  
+   POST
+    
+    body : {
+        name,
+        email,
+        password,
+        phoneNo,
+        profilePic
+    }
+
+2. /api/signin
+   POST
+
+    body : {
+        user : {
+            phoneNo,
+            password
+        }
+    }
+
+3. /api/userprofile
+   GET JWT_TOKEN
+
+4. /signout
+   GET
+
+
+messages
+
+5. /api/p2p/sendmessage/new
+   POST  JWT_TOKEN
+
+    body : {
+        rcvNumber,
+        msgBody
+    }
+
+6. /api/p2p/sendmessage
+   POST  JWT_TOKEN
+
+    body : {
+        rcvNumber,
+        msgBody
+    }
+
+7. /api/p2p/msgseen
+   POST JWT_TOKEN
+
+    body : {
+        phoneNo,
+       
+    }
+
+8. /api/p2p/allconversation
+   GET  JWT_TOKEN
+
+9. /api/p2p/getConversationById/:conversationId
+   GET JWT_TOKEN
+
+
+---------------------------------------------------------------------------------------------
+
